@@ -14,8 +14,8 @@ const INITIAL_DATA: BoardData = {
     ]
 };
 
-export const useKanban = () => {
-    const [boardData, setBoardData] = useState<BoardData>(INITIAL_DATA);
+export const useKanban = (initialData: BoardData = INITIAL_DATA) => {
+    const [boardData, setBoardData] = useState<BoardData>(initialData);
 
     const moveTask = useCallback((taskId: string, sourceStatus: Status, destStatus: Status, destIndex: number) => {
         setBoardData((prev) => {

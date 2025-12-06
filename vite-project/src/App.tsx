@@ -1,11 +1,10 @@
+import { Board } from './components/Board';
+
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-        Kanban Board
-      </h1>
-      <div className="flex justify-center">
-        <p>Loading board...</p>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-8">
+      <div className="max-w-7xl mx-auto h-[calc(100vh-4rem)]">
+        <Board />
       </div>
     </div>
   )
